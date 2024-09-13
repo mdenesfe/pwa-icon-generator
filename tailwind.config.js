@@ -9,6 +9,6 @@ export default {
     require('daisyui')
   ],
   daisyui: {
-    themes: ["light", "dark", "winter", "nord", "emerald"],
+    themes: ["light", "dark", "winter", "dim", "emerald"],
   },
 };

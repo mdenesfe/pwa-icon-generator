@@ -1,13 +1,46 @@
 <!doctype html>
 <html data-theme="emerald" lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Pwa Icon Generator</title>
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%sveltekit.assets%/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pwa Icon Generator</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Easily generate application icons with the PWA Icon Generator.">
+    <meta name="keywords" content="PWA, icon, generator, application, icon creation">
+    <meta name="author" content="Your Name">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Pwa Icon Generator">
+    <meta property="og:description" content="Easily generate application icons with the PWA Icon Generator.">
+    <meta property="og:image" content="https://pwa-icon-generator.vercel.app/icon.svg">
+    <meta property="og:url" content="https://pwa-icon-generator.vercel.app">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="https://pwa-icon-generator.vercel.app/icon.svg">
+    <meta name="twitter:title" content="Pwa Icon Generator">
+    <meta name="twitter:description" content="Easily generate application icons with the PWA Icon Generator.">
+    <meta name="twitter:image" content="https://pwa-icon-generator.vercel.app/icon.svg">
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://pwa-icon-generator.vercel.app">
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Pwa Icon Generator",
+      "url": "https://pwa-icon-generator.vercel.app/",
+      "description": "Easily generate application icons with the PWA Icon Generator."
+    }
+    </script>
+
+    %sveltekit.head%
+</head>
+<body data-sveltekit-preload-data="hover">
+    <div style="display: contents">%sveltekit.body%</div>
+</body>
 </html>

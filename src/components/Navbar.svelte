@@ -1,20 +1,13 @@
 <script>
     let isOpen = false;
 </script>
-<nav class="navbar bg-base-100 px-4 py-2 md:px-8 lg:px-16">
+<nav class="navbar bg-base-100 px-4 md:px-8 lg:px-16">
     <div class="navbar-start">
-        <a class="btn btn-ghost normal-case text-xl">Pwa Icon Generator</a>
-    </div>
-    <div class="navbar-center hidden lg:flex gap-4">
-        <ul class="menu menu-horizontal px-1">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Blog</a></li>
-        </ul>
+        <a class="btn btn-ghost normal-case text-lg"> <img src="/icon.svg" class="w-12" alt="Pwa Icon Generator"> Pwa Icon Generator</a>
     </div>
     <div class="navbar-end lg:flex">
         <label class="swap swap-rotate">
-            <input type="checkbox" class="theme-controller" value="dark"/>
+            <input type="checkbox" class="theme-controller" value="dim"/>
 
             <svg
                     class="swap-off h-10 w-10 fill-current"
@@ -33,23 +26,4 @@
             </svg>
         </label>
     </div>
-
-    <!-- Mobile Menu -->
-    <div class="navbar-end lg:hidden">
-        <button class="btn btn-ghost" on:click={() => isOpen = !isOpen}>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                 class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M4 6h16M4 12h16m-7 6h7"/>
-            </svg>
-        </button>
-    </div>
 </nav>
-{#if isOpen}
-    <ul class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-full lg:hidden">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">About</a></li>
-    </ul>
-{/if}
